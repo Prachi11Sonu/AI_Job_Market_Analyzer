@@ -1,0 +1,7 @@
+streamlit==1.55.0
+matplotlib
+pandas
+numpy
+joblib
+altair
+requests
