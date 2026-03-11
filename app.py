@@ -18,10 +18,10 @@ from predict import predict_salary, predict_salary_range
 st.set_page_config(
     page_title="AI Job Market Analyzer",
     layout="wide",
-    page_icon="📊"
+    page_icon=""
 )
 
-st.title("📊 AI Job Market Analyzer Dashboard")
+st.title("AI Job Market Analyzer Dashboard")
 
 st.markdown(
     "Analyze **job trends, skill demand, and salary predictions** using Machine Learning."
@@ -64,12 +64,12 @@ if selected_company != "All":
 # -------------------------------
 
 tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs([
-"📊 Market Overview",
-"📈 Skills Insights",
-"💰 Salary Analytics",
-"🤖 AI Tools",
-"🎯 Career Tools",
-"💬 AI Chatbot"
+"Market Overview",
+"Skills Insights",
+"Salary Analytics",
+"AI Tools",
+"Career Tools",
+"AI Chatbot"
 ])
 
 # -------------------------------
@@ -113,7 +113,7 @@ with tab2:
 
     st.bar_chart(top_skills.set_index("skill"))
 
-    st.subheader("☁️ Skills Word Cloud")
+    st.subheader("Skills Word Cloud")
 
     skills_list = filtered_df["skills"].explode()
     skills_list = skills_list.dropna().astype(str)
