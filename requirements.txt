@@ -1,7 +1,9 @@
-streamlit==1.55.0
-matplotlib
+streamlit
 pandas
-numpy
+matplotlib
+wordcloud
+pdfplumber
+scikit-learn
 joblib
-altair
-requests
+numpy
+seaborn
